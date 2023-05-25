@@ -16,7 +16,7 @@ public class Client {
              BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()))) {
             String response = in.readLine();
             System.out.println(response);
-            out.println("{ \"type\": \"RESTORE\", \"task\": \"В\"}");
+            out.println("{ \"type\": \"ADD\", \"task\": \"скакать\"}");
             response = in.readLine();
             System.out.println(response);
         } catch (IOException e) {
